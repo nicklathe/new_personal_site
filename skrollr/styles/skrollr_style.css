@@ -1,0 +1,186 @@
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+.caption{
+    position: absolute;
+}
+
+p, h1 {
+    margin: 0;
+}
+
+h1 {
+    font-family: 'Amatic SC', cursive;
+    margin-bottom: 20px;
+    font-size: 80px;
+}
+
+p {
+    line-height: 10px;
+    font-size: 30px;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+#glasses {
+    width: 300px;
+    height: auto;
+    margin-top: 10px;
+}
+
+.header h1 {
+    padding-top: 20px;
+    font-size: 130px;
+    color: yellow;
+    font-weight: 700;
+}
+
+#text-block-1 {
+    /*position: absolute;*/
+    width: 100%;
+    height: 200px;
+    background-color: #fff;
+    margin-top: 10%;
+}
+
+#text-block-2 {
+    /*position: absolute;*/
+    width: 500px;
+    height: 500px;
+    border-radius: 250px;
+    background-color: #fff;
+    margin-top: 10%;
+/*    left: 32%;
+    top: 20%;*/
+}
+
+#text-block-3 h1 {
+    /*margin-left: 40%;*/
+    margin-top: 10%;
+    color: #fff;
+    font-size: 120px;
+    font-weight: 700;
+    /*text-align: center;*/
+
+}
+
+#text-block-3 p {
+    color: #fff;
+    margin-top: 10%;
+    font-size: 40px;
+}
+
+#text-block-4 .caption h1 {
+    color: #fff;
+    margin-top: 30%;
+    font-size: 120px;
+}
+
+#slide-1 .caption {
+    top: 20%;
+    left: 23%;
+    /*text-align: center;*/
+    color: #000;
+
+}
+
+#slide-2 .caption {
+    top: 30%;
+    left: 0;
+    /*text-align: center;*/
+    color: #000;
+    width: 100%
+
+}
+
+#slide-3 .caption {
+    color: #fff;
+}
+
+#slide-4 .caption {
+    left: 30%;
+}
+
+#slides-container {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+#slides {
+    width: 200%;
+    height: 200%;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 50%;
+}
+
+#slide-1 {
+    background: url("../img/peak.jpg") no-repeat center center;
+    background-size: cover;
+}
+
+#slide-2 {
+    background: url("../img/forrest.jpg") no-repeat center center;
+    background-size: cover;
+    -webkit-transform: translate(0,100%);
+    -ms-transform: translate(0,100%);
+    transform: translate(0,100%);
+}
+
+#slide-3 {
+    background: url("../img/tools.jpg") no-repeat center center;
+    background-size: cover;
+    -webkit-transform: translate(100%,100%);
+    -ms-transform: translate(100%,100%);
+    transform: translate(100%,100%);
+}
+
+#slide-4 {
+    background: url("../img/porch.jpg") no-repeat center center;
+    background-size: cover;
+    -webkit-transform: translate(100%,0);
+    -ms-transform: translate(100%,0);
+    transform: translate(100%,0);
+}
+
+#helper{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 600%;
+    /* Set width to 20px for helper to work */
+    width: 0;
+}
+.marker {
+    height: 25%;
+    width: 100;
+}
+
+.red {
+    background-color: red;
+}
+
+.blue {
+    background-color: blue;
+}
+
+.green {
+    background-color: green;
+}
+
+.yellow {
+    background-color: yellow;
+}
+
+
+

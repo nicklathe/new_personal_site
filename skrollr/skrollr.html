@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Skrollr Fun</title>
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="styles/skrollr_style.css">
+    <link href='http://fonts.googleapis.com/css?family=Amatic+SC:700,400' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Josefin+Sans:300' rel='stylesheet' type='text/css'>
+</head>
+    <body>
+        <div class="wrapper">
+            <div id="slides-container">
+                <div id="slides"
+                data-0="transform: translate(0%, 0%)"
+                data-500p=""
+                data-1000p="transform: translate(0%, -50%)"
+                data-1500p=""
+                data-2000p="transform: translate(-50%, -50%)"
+                data-2500p=""
+                data-3000p="transform: translate(-50%, 0%)"
+                data-3500p=""
+                >
+                    <div id="slide-1" class="slide">
+                        <div class="col-md-12 text-center header"
+                        data-50p="transform:translate(0px,0px);"
+                        data-150p="transform:translate(0px,-200px);"
+                        >
+                        <h1>Scroll Down For Wanderlust</h1></div>
+                        <div id="text-block-1" class="col-md-12 col-sm-12 text-center"
+                        data-0="opacity: 0;"
+                        data-50p="opacity: 0.9;"
+                        data-600p=""
+                        data-750p="opacity: 0;"
+                        >
+                            <div class="caption"
+                            data-100p="opacity: 0; transform[bounce]:translate(0px,-500%);"
+                            data-200p="opacity: 1; transform:translate(0px,0px);"
+                            data-400p=""
+                            data-750p="opacity: 0; transform:translate(-500px,0px);"
+                            data-anchor-target="#helper"
+                            >
+                                <h1>Hipster Skrollr</h1>
+                                <p>Carefully Curated Handmade Stock of Skrollr Goods. Farm to Table</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="slide-2" class="slide">
+                        <div id="text-block-2" class="col-md-12 col-md-offset-4 col-sm-12 col-sm-offset-4 text-center"
+                        data-1700p="opacity: 1;"
+                        data-1800p="opacity: 0;"
+                        >
+                            <div class="caption"
+                            data-1000p="opacity: 0; transform:rotate(0deg);"
+                            data-1100p="opacity: 1; transform:rotate(1080deg);"
+                            data-1500p=""
+                            data-1900p="opacity: 0; transform:rotate(-920deg);"
+                            data-anchor-target="#helper"
+                            >
+                                <h1>So Much Hipster</h1>
+                                <p>PBR, Wes Anderson, Put a Bird On It</p>
+                                <img id="mustache" src="img/mustache.png"
+                                data-1200p="opacity: 0;"
+                                data-1300p="opacity: 1;"
+                                >
+                            </div>
+                        </div>
+                    </div>
+                    <div id="slide-3" class="slide">
+                        <div id="text-block-3" class="col-md-8 col-sm-8 col-md-offset-2 text-center">
+                            <div class="caption">
+                                <h1
+                                data-2000p="transform:translate(0px,-500px);"
+                                data-2200p="transform:translate(0px,0px);"
+                                >
+                                Hipsters: Inherited Their Grandpa's Tools...</h1>
+                                <p
+                                data-2000p="transform:translate(1000px,0px);"
+                                data-2200p="transform:translate(0px,0px);"
+                                >But None Of His Work Ethic</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="slide-4" class="slide">
+                        <div id="text-block-4" class="col-md-12 text-center">
+                            <div class="caption"
+                            data-3000p="transform:scale(0,0);"
+                            data-3200p="transform:scale(2,2);"
+                            >
+                                <h1>Porch Vibes For Days</h1>
+                                <p></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="helper">
+                <div class="marker red"></div>
+                <div class="marker blue"></div>
+                <div class="marker green"></div>
+                <div class="marker yellow"></div>
+            </div>
+        </div>
+        <script type="text/javascript" src="js/skrollr.min.js"></script>
+        <script type="text/javascript">
+            var s = skrollr.init();
+        </script>
+    </body>
+</html>

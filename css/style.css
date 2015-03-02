@@ -1,0 +1,384 @@
+body, html {
+    height: 100%;
+    width: 100%;
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+}
+
+.wrapper {
+    position: relative;
+    min-height: 100%;
+}
+
+/* --- Nav --- */
+.navbar {
+    width: 100%;
+    height: 75px;
+    border-radius: 0;
+    background-color: rgba(0,0,0,0.0);
+    border: none;
+}
+
+#bs-example-navbar-collapse-1 > ul > li > a {
+    color: #000;
+    padding-top: 25px;
+}
+
+#bs-example-navbar-collapse-1 > ul > li > a:hover {
+    border-bottom: 2px solid;
+}
+
+.navbar-default .navbar-brand {
+    color: #000;
+    padding-top: 25px;
+    padding-left: 50px;
+    font-size: 30px;
+}
+
+.navbar-default .navbar-brand:hover {
+    color: #000;
+}
+
+/* --- Sections --- */
+.main {
+    height: 700px;
+    width: 100%;
+    background-image: url('../img/main.jpeg');
+    background-size: cover;
+    background-position: center;
+    top: 0;
+}
+
+.header > h1 {
+    padding-top: 225px;
+    color: #fff;
+    font-size: 65px;
+    text-shadow: 1px 1px 8px #000;
+    position: relative;
+    z-index: 1
+}
+
+.header > p {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 100;
+    margin-bottom: 50px;
+    text-shadow: 2px 2px 8px #000;
+}
+
+.about {
+    height: 800px;
+    width: 100%;
+    background-color: #FEFAF7;
+}
+
+.portrait {
+    width: 200px; ;
+    margin: 0 auto;
+}
+
+.portrait > img {
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+    margin-top: 100px;
+}
+
+.about-text {
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.about-text > h2 {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.about-text > p {
+    line-height: 1.5;
+    font-size: 15px;
+    color: #707070;
+}
+
+.about-text > p > a {
+    color: #000;
+}
+
+.work {
+    min-height: 3400px;
+    width: 100%;
+    background-color: #FEFAF7;
+}
+
+.work-text {
+    width: 75%;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 50px;
+}
+
+.work-text > h2 {
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.portfolio-img {
+    width: 500px;
+    height: 300px;
+    margin-top: 50px;
+    -webkit-transition: -webkit-filter 0.5s;
+}
+
+.portfolio-img:hover {
+    -webkit-filter: blur(1px) grayscale(100%);
+    /*-webkit-filter: blur(2px);*/
+}
+
+.portfolio-outer {
+    max-width: 75%;
+    margin: 0 auto;
+}
+
+#portfolio-1 {
+    float: left;
+    text-align: left;
+}
+
+#portfolio-1 > p {
+    width: 600px;
+    line-height: 1.5;
+    font-size: 15px;
+    color: #707070;
+
+}
+
+#portfolio-2 {
+    float: right;
+    text-align: right;
+}
+
+#portfolio-2 > p {
+    width: 600px;
+    line-height: 1.5;
+    font-size: 15px;
+    color: #707070;
+
+}
+
+#portfolio-3 {
+    float: left;
+    text-align: left;
+}
+
+#portfolio-3 > p {
+    width: 600px;
+    line-height: 1.5;
+    font-size: 15px;
+    color: #707070;
+
+}
+
+#portfolio-4 {
+    float: right;
+    text-align: right;
+}
+
+#portfolio-4 > p {
+    width: 600px;
+    line-height: 1.5;
+    font-size: 15px;
+    color: #707070;
+
+}
+
+#portfolio-5 {
+    float: left;
+    text-align: left;
+}
+
+#portfolio-5 > p {
+    width: 600px;
+    line-height: 1.5;
+    font-size: 15px;
+    color: #707070;
+
+}
+
+#portfolio-6 {
+    float: right;
+    text-align: right;
+}
+
+#portfolio-6 > p {
+    width: 600px;
+    line-height: 1.5;
+    font-size: 15px;
+    color: #707070;
+}
+
+.portfolio > a > h3 {
+    -webkit-transition: color 0.3s ease;
+    -moz-transition: color 0.3s ease;
+    -o-transition: color 0.3s ease;
+    transition: color 0.3s ease;
+    color: #000;
+}
+
+.portfolio > a > h3:hover {
+    color: #707070;
+}
+
+.portfolio > a:hover {
+    text-decoration: none;
+}
+
+.portfolio > p > a {
+    -webkit-transition: color 0.3s ease;
+    -moz-transition: color 0.3s ease;
+    -o-transition: color 0.3s ease;
+    transition: color 0.3s ease;
+    color: #000;
+}
+
+.portfolio > p > a:hover {
+    text-decoration: none;
+    color: #707070;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 150px;
+    background-color: #0C0C1C;
+    display: table;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+footer > h3 {
+    color: #fff;
+    font-weight: 700;
+}
+
+body > div > footer > div > a > i {
+    display: inline-block;
+    padding: 10px;
+    -webkit-transition: color 0.5s ease;
+    -moz-transition: color 0.5s ease;
+    -o-transition: color 0.5s ease;
+    transition: color 0.5s ease;
+    color: #fff;
+}
+
+body > div > footer > div > a > i:hover {
+    color: #36524C;
+}
+
+/* --- buttons --- */
+
+a.button {
+    padding: 15px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border: 1px solid;
+    color: #fff;
+    -webkit-transition: background-color 0.5s ease;
+    -moz-transition: background-color 0.5s ease;
+    -ms-transition: background-color 0.5s ease;
+    -o-transition: background-color 0.5s ease;
+    transition: background-color 0.5s ease;
+    background-color: rgba(0,0,0,0.0);
+}
+
+a.button:hover{
+    text-decoration: none;
+    background-color: rgba(0,0,0,0.5);
+}
+
+button.navbar-toggle {
+    margin-top: 20px;
+}
+
+@media (max-width: 600px) {
+
+    .header > h1 {
+        font-size: 60px;
+        padding-top: 170px;
+    }
+
+    #portfolio-1 > p,
+    #portfolio-2 > p,
+    #portfolio-3 > p,
+    #portfolio-4 > p,
+    #portfolio-5 > p,
+    #portfolio-6 > p {
+        width: 100%;
+        text-align: center;
+        padding-bottom: 20px;
+    }
+
+    #portfolio-1,
+    #portfolio-2,
+    #portfolio-3,
+    #portfolio-4,
+    #portfolio-5,
+    #portfolio-6 {
+        float: center;
+        text-align: center;
+    }
+
+    .portfolio-img {
+        width: 250px;
+        height: 150px;
+        float: center;
+        margin-bottom: 20px;
+    }
+
+    .about-text {
+        width: 75%;
+    }
+
+    .work {
+        height: 3100px;
+    }
+
+    #bs-example-navbar-collapse-1 {
+        background-color: rgba(0,0,0,0.7);
+        border: none;
+        width: 85%;
+        margin: 0 auto;
+        position: relative;
+        z-index: 10;
+    }
+
+    #bs-example-navbar-collapse-1 > ul > li > a {
+        color: #fff;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
