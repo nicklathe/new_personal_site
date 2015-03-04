@@ -17,8 +17,12 @@ body, html {
     width: 100%;
     height: 75px;
     border-radius: 0;
-    background-color: rgba(0,0,0,0.0);
+    /*background-color: rgba(255,255,255,0.0);*/
+    background-color: rgba(253,248,245,0.8);
+    /*background-color: #FDF8F5;*/
     border: none;
+    position: fixed;
+    z-index: 10;
 }
 
 #bs-example-navbar-collapse-1 > ul > li > a {
@@ -37,7 +41,11 @@ body, html {
     font-size: 30px;
 }
 
-.navbar-default .navbar-brand:hover {
+#section-top > nav > div > div.navbar-header > a {
+    color: #000;
+}
+
+#section-top > nav > div > div.navbar-header > a:hover {
     color: #000;
 }
 
@@ -110,7 +118,7 @@ body, html {
 }
 
 .work {
-    min-height: 3400px;
+    min-height: 3000px;
     width: 100%;
     background-color: #FEFAF7;
 }
@@ -119,7 +127,7 @@ body, html {
     width: 75%;
     margin: 0 auto;
     text-align: center;
-    padding-top: 20px;
+    padding-top: 75px;
     padding-bottom: 50px;
 }
 
@@ -129,9 +137,11 @@ body, html {
 }
 
 .portfolio-img {
-    width: 500px;
-    height: 300px;
-    margin-top: 50px;
+    /*width: 500px;*/
+    width: 45%;
+    /*height: 300px;*/
+    /*height: 20%;*/
+    /*margin-top: 50px;*/
     -webkit-transition: -webkit-filter 0.5s;
 }
 
@@ -141,85 +151,48 @@ body, html {
 }
 
 .portfolio-outer {
-    max-width: 75%;
+    max-width: 80%;
     margin: 0 auto;
 }
 
-#portfolio-1 {
+#img-1,
+#img-3,
+#img-5 {
     float: left;
-    text-align: left;
 }
 
-#portfolio-1 > p {
-    width: 600px;
-    line-height: 1.5;
-    font-size: 15px;
-    color: #707070;
-
-}
-
-#portfolio-2 {
+#text-1,
+#text-3,
+#text-5 {
     float: right;
     text-align: right;
-}
-
-#portfolio-2 > p {
-    width: 600px;
+    width: 40%;
     line-height: 1.5;
     font-size: 15px;
     color: #707070;
-
+    margin: 0;
 }
 
-#portfolio-3 {
+#img-2,
+#img-4,
+#img-6 {
+    float: right;
+}
+
+#text-2,
+#text-4,
+#text-6 {
     float: left;
     text-align: left;
-}
-
-#portfolio-3 > p {
-    width: 600px;
+    width: 40%;
     line-height: 1.5;
     font-size: 15px;
     color: #707070;
-
+    margin: 0;
 }
 
-#portfolio-4 {
-    float: right;
-    text-align: right;
-}
-
-#portfolio-4 > p {
-    width: 600px;
-    line-height: 1.5;
-    font-size: 15px;
-    color: #707070;
-
-}
-
-#portfolio-5 {
-    float: left;
-    text-align: left;
-}
-
-#portfolio-5 > p {
-    width: 600px;
-    line-height: 1.5;
-    font-size: 15px;
-    color: #707070;
-
-}
-
-#portfolio-6 {
-    float: right;
-    text-align: right;
-}
-
-#portfolio-6 > p {
-    width: 600px;
-    line-height: 1.5;
-    font-size: 15px;
-    color: #707070;
+.portfolio {
+    margin-top: 100px;
 }
 
 .portfolio > a > h3 {
@@ -307,6 +280,8 @@ button.navbar-toggle {
     margin-top: 20px;
 }
 
+/* --- Media Q --- */
+
 @media (max-width: 600px) {
 
     .header > h1 {
@@ -324,6 +299,35 @@ button.navbar-toggle {
         text-align: center;
         padding-bottom: 20px;
     }
+
+    /* --- new section testing  --- */
+
+    #img-1,
+    #img-2,
+    #img-3,
+    #img-4,
+    #img-5,
+    #img-6 {
+        float: center;
+    }
+
+    #text-1,
+    #text-2,
+    #text-3,
+    #text-4,
+    #text-5,
+    #text-6 {
+        float: center;
+        text-align: center;
+        width: 100%;
+        line-height: 1.5;
+        font-size: 15px;
+        color: #707070;
+    }
+
+
+
+    /* ---------------------------- */
 
     #portfolio-1,
     #portfolio-2,
@@ -347,7 +351,7 @@ button.navbar-toggle {
     }
 
     .work {
-        height: 3100px;
+        height: 3400px;
     }
 
     #bs-example-navbar-collapse-1 {
@@ -361,6 +365,12 @@ button.navbar-toggle {
 
     #bs-example-navbar-collapse-1 > ul > li > a {
         color: #fff;
+    }
+
+    #section-top > nav > div > div.navbar-header > a {
+        font-size: 20px;
+        padding-top: 20px;
+        padding-left: 10px;
     }
 
 }

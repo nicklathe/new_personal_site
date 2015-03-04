@@ -12,10 +12,11 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/0.12.0/ui-bootstrap-tpls.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-scroll/0.6.4/angular-scroll.min.js"></script>
     <script src="js/app.js"></script>
+    <script src="js/scroll.js"></script>
 </head>
 <body ng-app="MyApp">
     <div class="wrapper" ng-controller="MainController">
-        <div class="main">
+        <div class="main" id="section-top">
             <nav class="navbar navbar-default" ng-controller="NavController">
                 <div class="container-fluid">
                     <div class="navbar-header">
@@ -25,19 +26,19 @@
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
                         </button>
-                        <a class="navbar-brand" href="#">Nick Lathe</a>
+                        <a class="navbar-brand" href="#section-top" du-smooth-scroll duration="500">Nick Lathe</a>
                     </div>
                     <div collapse="navCollapsed" class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                         <ul class="nav navbar-nav navbar-right">
-                            <li><a href="#section-about" du-smooth-scroll du-scrollspy>About</a></li>
-                            <li><a href="#section-work" du-smooth-scroll du-scrollspy>Work</a></li>
-                            <li><a href="#section-contact" du-smooth-scroll du-scrollspy>Contact</a></li>
+                            <li><a href="#section-about" du-smooth-scroll duration="500">About</a></li>
+                            <li><a href="#section-work" du-smooth-scroll duration="750">Work</a></li>
+                            <li><a href="#section-contact" du-smooth-scroll duration="1000">Contact</a></li>
                             <li><a href="Resume_Nick_Lathe.pdf">Resume</a></li>
                         </ul>
                     </div>
                 </div>
             </nav>
-            <div class="header col-md-12 col-sm-12 text-center">
+            <div class="header col-md-12 col-sm-12 text-center" id="header">
                 <h1>Hi, I'm Nick</h1>
                 <p>A Seattle Based Web Developer</p>
                 <a class="button" href="#section-work" du-smooth-scroll du-scrollspy>See My Work</a>
@@ -59,35 +60,47 @@
                 <h2>My Work</h2>
             </div>
             <div class="portfolio-outer">
-                <div class="portfolio" id="portfolio-1">
-                    <a href="http://cnvrge.me/" target="_blank"><img class="portfolio-img" ng-src="img/cnvrge.png"></a>
-                    <a href="http://cnvrge.me/"><h3>Cnvrge</h3></a>
-                    <p>This was my final project at GA. I wanted to simplify the process of trying to find a place for two friends to meet for lunch. This app uses the geolocation of each user, and returns a list of up to 20 restaurant suggestions, which they can vote yes or no on, one at a time. It's built in Node.js with a MongoDB database, and features AngularJS and Socket.io for a dynamic real-time user experience. <a href="https://github.com/nicklathe/converge"><b>Github repo.</b></a></p>
+                <div class="portfolio row" id="portfolio-1">
+                    <a href="http://cnvrge.me/" target="_blank"><img class="portfolio-img" id="img-1" ng-src="img/cnvrge.png"></a>
+                    <div class="portfolio" id="text-1">
+                        <a href="http://cnvrge.me/"><h3>Cnvrge</h3></a>
+                        <p>This was my final project at GA. I wanted to simplify the process of trying to find a place for two friends to meet for lunch. This app uses the geolocation of each user, and returns a list of up to 20 restaurant suggestions, which they can vote yes or no on, one at a time. It's built in Node.js with a MongoDB database, and features AngularJS and Socket.io for a dynamic real-time user experience. <a href="https://github.com/nicklathe/converge"><b>Github repo.</b></a></p>
+                    </div>
                 </div>
-                <div class="portfolio" id="portfolio-2">
-                    <a href="https://seattlebreweryfinder.herokuapp.com/" target="_blank"><img class="portfolio-img" ng-src="img/brewery_app.png"></a>
-                    <a href="https://seattlebreweryfinder.herokuapp.com/"><h3>Seattle Brewery Finder</h3></a>
-                    <p>This was my first full-scale web app I built as a student in General Assembly's Web Development Immersive. I built it in one week. It is written in Node.js, with Express.js. as the framework. I used two API's: Mapbox for the map, and BreweryDB for brewery information. The app works with a Postgres database, and features user authentication using bcrypt. <a href="https://github.com/nicklathe/brewery_app"><b>Github repo.</b></a></p>
+                <div class="portfolio row" id="portfolio-2">
+                    <a href="https://seattlebreweryfinder.herokuapp.com/" target="_blank"><img class="portfolio-img" id="img-2" ng-src="img/brewery_app.png"></a>
+                    <div class="portfolio" id="text-2">
+                        <a href="https://seattlebreweryfinder.herokuapp.com/"><h3>Seattle Brewery Finder</h3></a>
+                        <p>This was my first full-scale web app I built as a student in General Assembly's Web Development Immersive. I built it in one week. It is written in Node.js, with Express.js. as the framework. I used two API's: Mapbox for the map, and BreweryDB for brewery information. The app works with a Postgres database, and features user authentication using bcrypt. <a href="https://github.com/nicklathe/brewery_app"><b>Github repo.</b></a></p>
+                    </div>
                 </div>
-                <div class="portfolio" id="portfolio-3">
-                    <a href="http://seattletradingpost.herokuapp.com/" target="_blank"><img class="portfolio-img" ng-src="img/stp.png"></a>
-                    <a href="http://seattletradingpost.herokuapp.com/"><h3>Seattle Trading Post</h3></a>
-                    <p>I got to build this app with 3 other people in GA's WDI. Seattle Trading Post connects the community of makers to allow people in the DIY community to learn from each other, and contribute their own skills. We had a week to dream up, wireframe, and build the entire app. We all worked on both front end and back end aspects of the site. It currently uses 6 models and multiple API's, including Venmo and Cloudinary. <a href="https://github.com/nicklathe/seattle_makers"><b>Github repo.</b></a></p>
+                <div class="portfolio row" id="portfolio-3">
+                    <a href="http://seattletradingpost.herokuapp.com/" target="_blank"><img class="portfolio-img" id="img-3" ng-src="img/stp.png"></a>
+                    <div class="portfolio" id="text-3">
+                        <a href="http://seattletradingpost.herokuapp.com/"><h3>Seattle Trading Post</h3></a>
+                        <p>I got to build this app with 3 other people in GA's WDI. Seattle Trading Post connects the community of makers to allow people in the DIY community to learn from each other, and contribute their own skills. We had a week to dream up, wireframe, and build the entire app. We all worked on both front end and back end aspects of the site. It currently uses 6 models and multiple API's, including Venmo and Cloudinary. <a href="https://github.com/nicklathe/seattle_makers"><b>Github repo.</b></a></p>
+                    </div>
                 </div>
-                <div class="portfolio" id="portfolio-4">
-                    <a href="/skrollr/skrollr.html" target="_blank"><img class="portfolio-img" ng-src="img/skrollr.png"></a>
-                    <a href="/skrollr/skrollr.html" target="_blank"><h3>Parallax Scroll</h3></a>
-                    <p>This is a little weekend project I did, playing with Skrollr. <a href="https://github.com/nicklathe/Skrollr_Project"><b>Github repo.</b></a></p>
+                <div class="portfolio row" id="portfolio-4">
+                    <a href="/skrollr/skrollr.html" target="_blank"><img class="portfolio-img" id="img-4" ng-src="img/skrollr.png"></a>
+                    <div class="portfolio" id="text-4">
+                        <a href="/skrollr/skrollr.html" target="_blank"><h3>Parallax Scroll</h3></a>
+                        <p>This is a little weekend project I did, playing with Skrollr. <a href="https://github.com/nicklathe/Skrollr_Project"><b>Github repo.</b></a></p>
+                    </div>
                 </div>
-                <div class="portfolio" id="portfolio-5">
-                    <a href="https://bogcreatures.herokuapp.com/" target="_blank"><img class="portfolio-img" ng-src="img/bog_app.png"></a>
-                    <a href="https://bogcreatures.herokuapp.com/"><h3>Bog App</h3></a>
-                    <p>This is a dumb little web app I made in class. No one needs a bog app, to record creatures, but it was good practice building it in rails. It has a cool gem called tags input, which allows you to add multiple tags to a create. Also has tag clouds. Try it out! <a href="https://github.com/nicklathe/bog_app_lab"><b>Github repo.</b></a></p>
+                <div class="portfolio row" id="portfolio-5">
+                    <a href="https://bogcreatures.herokuapp.com/" target="_blank"><img class="portfolio-img" id="img-5" ng-src="img/bog_app.png"></a>
+                    <div class="portfolio" id="text-5">
+                        <a href="https://bogcreatures.herokuapp.com/"><h3>Bog App</h3></a>
+                        <p>This is a dumb little web app I made in class. No one needs a bog app, to record creatures, but it was good practice building it in rails. It has a cool gem called tags input, which allows you to add multiple tags to a create. Also has tag clouds. Try it out! <a href="https://github.com/nicklathe/bog_app_lab"><b>Github repo.</b></a></p>
+                    </div>
                 </div>
-                <div class="portfolio" id="portfolio-6">
-                    <a href="http://nickstinyurl.herokuapp.com/" target="_blank"><img class="portfolio-img" ng-src="img/tiny_url.png"></a>
-                    <a href="http://nickstinyurl.herokuapp.com/"><h3>Tiny URL Maker</h3></a>
-                    <p>As a student in General Assembly's Web Development Immersive, we were tasked to build this first little web app during our 3rd week, after a couple days of working with Node.js and Express.js. It was the first web app I ever deployed. It works with a Postgres DB. <br><a href="https://github.com/nicklathe/tiny_url_maker"><b>Github repo.</b></a></p>
+                <div class="portfolio row" id="portfolio-6">
+                    <a href="http://nickstinyurl.herokuapp.com/" target="_blank"><img class="portfolio-img" id="img-6" ng-src="img/tiny_url.png"></a>
+                    <div class="portfolio" id="text-6">
+                        <a href="http://nickstinyurl.herokuapp.com/"><h3>Tiny URL Maker</h3></a>
+                        <p>As a student in General Assembly's Web Development Immersive, we were tasked to build this first little web app during our 3rd week, after a couple days of working with Node.js and Express.js. It was the first web app I ever deployed. It works with a Postgres DB. <br><a href="https://github.com/nicklathe/tiny_url_maker"><b>Github repo.</b></a></p>
+                    </div>
                 </div>
             </div>
         </div>
