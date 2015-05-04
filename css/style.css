@@ -1,7 +1,6 @@
 body, html {
     height: 100%;
     width: 100%;
-    max-width: 1500px;
     margin: 0 auto;
     padding: 0;
     font-family: 'Lato', sans-serif;
@@ -118,7 +117,6 @@ body, html {
 }
 
 .work {
-    min-height: 3000px;
     width: 100%;
     background-color: #FEFAF7;
 }
@@ -137,11 +135,8 @@ body, html {
 }
 
 .portfolio-img {
-    /*width: 500px;*/
     width: 45%;
-    /*height: 300px;*/
-    /*height: 20%;*/
-    /*margin-top: 50px;*/
+    max-width: 615px;
     -webkit-transition: -webkit-filter 0.5s;
 }
 
@@ -193,6 +188,10 @@ body, html {
 
 .portfolio {
     margin-top: 100px;
+}
+
+#text-6 {
+    margin-bottom: 400px;
 }
 
 .portfolio > a > h3 {
@@ -350,10 +349,6 @@ button.navbar-toggle {
         width: 75%;
     }
 
-    .work {
-        height: 3400px;
-    }
-
     #bs-example-navbar-collapse-1 {
         background-color: rgba(0,0,0,0.7);
         border: none;
@@ -374,21 +369,3 @@ button.navbar-toggle {
     }
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
