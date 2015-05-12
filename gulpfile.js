@@ -16,11 +16,11 @@ gulp.task('lint', function(){
 });
 
 // Compile Our Sass
-gulp.task('sass', function(){
-    return gulp.src('scss/*.scss')
-        .pipe(sass())
-        .pipe(gulp.dest('css'));
-});
+// gulp.task('sass', function(){
+//     return gulp.src('scss/*.scss')
+//         .pipe(sass())
+//         .pipe(gulp.dest('css'));
+// });
 
 // Concatenate & Minify JS
 gulp.task('scripts', function(){

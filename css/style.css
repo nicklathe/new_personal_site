@@ -168,12 +168,14 @@ body, html {
     margin: 0;
 }
 
+#img-0,
 #img-2,
 #img-4,
 #img-6 {
     float: right;
 }
 
+#text-0,
 #text-2,
 #text-4,
 #text-6 {
@@ -301,6 +303,7 @@ button.navbar-toggle {
 
     /* --- new section testing  --- */
 
+    #img-0,
     #img-1,
     #img-2,
     #img-3,
@@ -310,6 +313,7 @@ button.navbar-toggle {
         float: center;
     }
 
+    #text-0,
     #text-1,
     #text-2,
     #text-3,
@@ -328,6 +332,7 @@ button.navbar-toggle {
 
     /* ---------------------------- */
 
+    #portfolio-0,
     #portfolio-1,
     #portfolio-2,
     #portfolio-3,

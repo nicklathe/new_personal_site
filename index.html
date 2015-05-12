@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+    <meta name="description" content="Nick Lathe is a Seattle based full-stack web developer, passionate about the front-end and new technologies.">
+    <meta name="google-site-verification" content="Ysj6snqHoQHchu_QxhqwCKuddOryo4nVt1nUisrr3FI" />
     <title>Nick Lathe | Web Developer</title>
     <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
@@ -13,6 +15,16 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-scroll/0.6.4/angular-scroll.min.js"></script>
     <script src="js/app.js"></script>
     <script src="js/scroll.js"></script>
+
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-60164764-2', 'auto');
+        ga('send', 'pageview');
+    </script>
 </head>
 <body ng-app="MyApp">
     <div class="wrapper" ng-controller="MainController">
@@ -51,7 +63,11 @@
             </div>
             <div class="about-text">
                 <h2>About Me</h2>
-                <p>I love technology, music, and the outdoors. I'm passionate about building beautiful responsive web apps, and love both front end and back end development. I have experience in <b>Javascript, Node.js, Express.js, AngularJS, Ruby on Rails, HTML5, CSS3,</b> as well as <b>Postgres and MongoDB.</b></p>
+                <p>
+                    I love technology, music, and the outdoors. I'm passionate about building beautiful responsive web apps, and love both front end and
+                    back end development. I have experience in <b>Javascript, Node.js, Express.js, AngularJS, Ruby on Rails, HTML5, CSS3,</b> as well as
+                    <b>Postgres and MongoDB.</b>
+                </p>
                 <p>Think I may be a good fit for your team? Let's <a href="mailto:nicklathe@icloud.com?Subject=Hey%20Nick"><b>connect!</b></a></p>
             </div>
         </div>
@@ -60,46 +76,84 @@
                 <h2>My Work</h2>
             </div>
             <div class="portfolio-outer">
+                <div class="portfolio row" id="portfolio-0">
+                    <a href="http://windowsondevices.com/" target="_blank"><img class="portfolio-img" id="img-0" ng-src="img/windows.png"></a>
+                    <div class="portfolio" id="text-0">
+                        <a href="http://windowsondevices.com/" target="_blank"><h3>Windows on Devices | Microsoft</h3></a>
+                        <p>
+                            This was the project I worked on at Microsoft. I had a huge part in the design and developemnt of the site. During development,
+                            I implimented custom Angular directives, Gulp, and a Node.js script to automate some things for us. I also oversaw pull requests
+                            from other team members, and worked with Hackster.io to integrate Hackster with the site.
+                            <a href="https://github.com/ms-iot/content"><b>Github repo.</b></a>
+                        </p>
+                    </div>
+                </div>
                 <div class="portfolio row" id="portfolio-1">
                     <a href="http://cnvrge.me/" target="_blank"><img class="portfolio-img" id="img-1" ng-src="img/cnvrge.png"></a>
                     <div class="portfolio" id="text-1">
-                        <a href="http://cnvrge.me/"><h3>Cnvrge</h3></a>
-                        <p>I wanted to simplify the process of trying to find a place for two friends to meet for lunch. This app uses the geolocation of each user, and returns a list of up to 20 restaurant suggestions, which they can vote yes or no on, one at a time. It's built in Node.js with a MongoDB database, and features AngularJS and Socket.io for a dynamic real-time user experience. <a href="https://github.com/nicklathe/converge"><b>Github repo.</b></a></p>
+                        <a href="http://cnvrge.me/" target="_blank"><h3>Cnvrge</h3></a>
+                        <p>
+                            I wanted to simplify the process of trying to find a place for two friends to meet for lunch. This app uses the geolocation
+                            of each user, and returns a list of up to 20 restaurant suggestions, which they can vote yes or no on, one at a time. It's
+                            built in Node.js with a MongoDB database, and features AngularJS and Socket.io for a dynamic real-time user experience.
+                            <a href="https://github.com/nicklathe/converge"><b>Github repo.</b></a>
+                        </p>
                     </div>
                 </div>
                 <div class="portfolio row" id="portfolio-2">
                     <a href="https://seattlebreweryfinder.herokuapp.com/" target="_blank"><img class="portfolio-img" id="img-2" ng-src="img/brewery_app.png"></a>
                     <div class="portfolio" id="text-2">
-                        <a href="https://seattlebreweryfinder.herokuapp.com/"><h3>Seattle Brewery Finder</h3></a>
-                        <p>This is an app to help you find breweries in Seattle. You can create an account, and save your favorite ones for remembering later. It is written in Node.js, with Express.js. as the framework. I used two API's: Mapbox for the map, and BreweryDB for brewery information. The app works with a Postgres database, and features user authentication using bcrypt. <a href="https://github.com/nicklathe/brewery_app"><b>Github repo.</b></a></p>
+                        <a href="https://seattlebreweryfinder.herokuapp.com/" target="_blank"><h3>Seattle Brewery Finder</h3></a>
+                        <p>
+                            This is an app to help you find breweries in Seattle. You can create an account, and save your favorite ones for remembering
+                            later. It is written in Node.js, with Express.js. as the framework. I used two API's: Mapbox for the map, and BreweryDB for
+                            brewery information. The app works with a Postgres database, and features user authentication using bcrypt.
+                            <a href="https://github.com/nicklathe/brewery_app"><b>Github repo.</b></a>
+                        </p>
                     </div>
                 </div>
                 <div class="portfolio row" id="portfolio-3">
                     <a href="http://seattletradingpost.herokuapp.com/" target="_blank"><img class="portfolio-img" id="img-3" ng-src="img/stp.png"></a>
                     <div class="portfolio" id="text-3">
-                        <a href="http://seattletradingpost.herokuapp.com/"><h3>Seattle Trading Post</h3></a>
-                        <p>I got to build this app with 3 other people in GA's WDI. Seattle Trading Post connects the community of makers to allow people in the DIY community to learn from each other, and contribute their own skills. We had a week to dream up, wireframe, and build the entire app. We all worked on both front end and back end aspects of the site. It currently uses 6 models and multiple API's, including Venmo and Cloudinary. <a href="https://github.com/nicklathe/seattle_makers"><b>Github repo.</b></a></p>
+                        <a href="http://seattletradingpost.herokuapp.com/" target="_blank"><h3>Seattle Trading Post</h3></a>
+                        <p>
+                            I got to build this app with 3 other people in GA's WDI. Seattle Trading Post connects the community of makers to allow people
+                            in the DIY community to learn from each other, and contribute their own skills. We had a week to dream up, wireframe, and
+                            build the entire app. We all worked on both front end and back end aspects of the site. It currently uses 6 models and
+                            multiple API's, including Venmo and Cloudinary. <a href="https://github.com/nicklathe/seattle_makers"><b>Github repo.</b></a>
+                        </p>
                     </div>
                 </div>
                 <div class="portfolio row" id="portfolio-4">
                     <a href="/skrollr/skrollr.html" target="_blank"><img class="portfolio-img" id="img-4" ng-src="img/skrollr.png"></a>
                     <div class="portfolio" id="text-4">
                         <a href="/skrollr/skrollr.html" target="_blank"><h3>Parallax Scroll</h3></a>
-                        <p>This is a little weekend project I did, playing with Skrollr. <a href="https://github.com/nicklathe/Skrollr_Project"><b>Github repo.</b></a></p>
+                        <p>
+                            This is a little weekend project I did, playing with Skrollr.
+                            <a href="https://github.com/nicklathe/Skrollr_Project"><b>Github repo.</b></a>
+                        </p>
                     </div>
                 </div>
                 <div class="portfolio row" id="portfolio-5">
                     <a href="https://bogcreatures.herokuapp.com/" target="_blank"><img class="portfolio-img" id="img-5" ng-src="img/bog_app.png"></a>
                     <div class="portfolio" id="text-5">
-                        <a href="https://bogcreatures.herokuapp.com/"><h3>Bog App</h3></a>
-                        <p>This is a dumb little web app I made in class. No one needs a bog app, to record creatures, but it was good practice building it in rails. It has a cool gem called tags input, which allows you to add multiple tags to a create. Also has tag clouds. Try it out! <a href="https://github.com/nicklathe/bog_app_lab"><b>Github repo.</b></a></p>
+                        <a href="https://bogcreatures.herokuapp.com/" target="_blank"><h3>Bog App</h3></a>
+                        <p>
+                            This is a dumb little web app I made in class. No one needs a bog app, to record creatures, but it was good practice building
+                            it in rails. It has a cool gem called tags input, which allows you to add multiple tags to a create. Also has tag clouds.
+                            Try it out! <a href="https://github.com/nicklathe/bog_app_lab"><b>Github repo.</b></a>
+                        </p>
                     </div>
                 </div>
                 <div class="portfolio row" id="portfolio-6">
                     <a href="http://nickstinyurl.herokuapp.com/" target="_blank"><img class="portfolio-img" id="img-6" ng-src="img/tiny_url.png"></a>
                     <div class="portfolio" id="text-6">
-                        <a href="http://nickstinyurl.herokuapp.com/"><h3>Tiny URL Maker</h3></a>
-                        <p>As a student in General Assembly's Web Development Immersive, we were tasked to build this first little web app during our 3rd week, after a couple days of working with Node.js and Express.js. It was the first web app I ever deployed. It works with a Postgres DB. <br><a href="https://github.com/nicklathe/tiny_url_maker"><b>Github repo.</b></a></p>
+                        <a href="http://nickstinyurl.herokuapp.com/" target="_blank"><h3>Tiny URL Maker</h3></a>
+                        <p>
+                            As a student in General Assembly's Web Development Immersive, we were tasked to build this first little web app during our
+                            3rd week, after a couple days of working with Node.js and Express.js. It was the first web app I ever deployed. It works
+                            with a Postgres DB. <br><a href="https://github.com/nicklathe/tiny_url_maker"><b>Github repo.</b></a>
+                        </p>
                     </div>
                 </div>
             </div>
